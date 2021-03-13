@@ -1,5 +1,7 @@
 # BREW_ME
 
+****
+
 ## Project overview
 
 This application allows users to locate any brewies within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for project-build aspects, functionality, and more.
