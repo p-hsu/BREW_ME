@@ -83,7 +83,7 @@ Please use the following link to deploy a live URL of this project:
 
 ## Credit
 
-* *Original* code written between Brandon Maxwell, Felicia Wootton, and Pamela Hsu
+* "**Brew Me!** original concept and code collaborators: Brandon Maxwell || Felicia Wootton || Pamela Hsu
 * Mim Armand and Kat Poulos provided assistance and mentorship as the program instructor and teaching assistant respectivley
 * Full-stack Bootcamp Program @ [Washington University, Saint Louis](https://bootcamp.tlcenter.wustl.edu/) through [© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand](https://www.trilogyed.com/)
 * Animated GIF created using [© Screencastify,LLC 2020](https://www.screencastify.com/)
