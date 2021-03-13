@@ -4,7 +4,7 @@
 
 ## Project overview
 
-This application allows users to locate any brewies within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for project-build aspects, functionality, and more.
+This application allows users to locate any breweries within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for project-build aspects, functionality, and more.
 
 [Project Proposal](./project-proposal.md)
 
@@ -28,8 +28,9 @@ The following components are used to build the code for this project:
 
 1. **HTML**
 2. **CSS**:
-    * Bootstrap
     * Bulma
+    * Pure
+    * Fontawesome
     * custom
 3. **JavaScript**:
     * JQuery is used for DOM manipulation in `script.js`
@@ -57,7 +58,7 @@ Designated tasts and project member initials: see **Members** section for refere
 * [x] wireframe: FW/BM/PH
 * [x] `project-proposal.md`: BM/FW/PH
 * [ ] `index.html`: BM/FW
-* [ ] `style.css` (Bootstrap & Bulma): FW
+* [ ] `style.css`: FW
 * [ ] `README.md`: PH
 * [ ] API research: BM
 
