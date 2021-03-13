@@ -2,11 +2,9 @@
 
 ## Project overview
 
-****
-
 This application allows users to locate any brewies within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for project-build aspects, functionality, and more.
 
-[Project Proposal!](./project-proposal.md)
+[Project Proposal](./project-proposal.md)
 
 ### Project Members:
 
@@ -14,9 +12,13 @@ This application allows users to locate any brewies within a given distance from
 * Felicia Wootton: [fdwootton](https://github.com/fdwootton)
 * Pamela Hsu: [p-hsu](https://github.com/p-hsu)
 
-## MVP
+### Project Status:
+
+Incomplete: please see **Process** section for reference.
 
 ****
+
+## MVP
 
 ### Project-build Aspects:
 
@@ -55,7 +57,7 @@ Designated tasts and project member initials: see **Members** section for refere
 * [ ] `index.html`: BM/FW
 * [ ] `style.css` (Bootstrap & Bulma): FW
 * [ ] `README.md`: PH
-* [ ] API reserach: BM
+* [ ] API research: BM
 
 #### Client-side
 * [ ] pending
@@ -70,6 +72,8 @@ Designated tasts and project member initials: see **Members** section for refere
 ### MVP screenshot
 
 ![Animated GIF of project:](./assets/images/brew-me-gif.png)
+
+****
 
 ## Deployment
 
