@@ -24,6 +24,9 @@ function brewMe (e) {
     })
 }
 
+// pull name, street, city, state, postal_code, website_url, phone
+//data[0].name 
+
 // create div elements
 
 // pull location details
