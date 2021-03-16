@@ -1,10 +1,9 @@
 // declare global variables
 var subBtn = document.querySelector("button")
-// var userInput = document.getElementById("input").value
-// console.log(userInput);
-// var userLoc = userInput.value
-// console.log(userLoc);
+var brewInfo = document.querySelector("p")
 
+var brewHeader = document.querySelectorAll("h4")
+var headerArray = []
 
 // fetch brewery api
 function brewMe (e) {
@@ -21,6 +20,26 @@ function brewMe (e) {
     })
     .then(function(data){
         console.log(data);
+
+        // for loop to push header elements into array
+        for(var i = 0; i < brewHeader.length; i++) {
+            headerArray.push(brewHeader[i]);
+        }
+
+        // for loop
+        for(var i = 0; i >= data.length[0] && i <= data.length[3]; i++){
+
+            var name = data[i].name
+            //forEach to populate header with name
+            brewHeader.forEach(myFunction)
+
+            function myFunction(item, index, arr) {
+                arr[index] = item.textContent = name
+            }
+
+                
+
+        }
     })
 }
 
