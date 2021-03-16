@@ -27,7 +27,7 @@ function brewMe (e) {
 
     .then(function(data){
         console.log(data);
-        mainDiv.innerHTML = ""; //Clear previously search results
+        mainDiv.innerHTML = ""; //Clear previous search results
         renderBreweryResults(data);
     })
 }
