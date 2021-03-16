@@ -5,7 +5,7 @@ var brewInfo = document.querySelector("p")
 var brewHeader = document.querySelectorAll("h4")
 var headerArray = []
 
-var mainDiv = document.getElementById("main");
+var mainDiv = document.getElementById("main"); //Will contain search results
 
 
 // fetch brewery api
@@ -59,7 +59,7 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
         newDiv3.appendChild(newH4);
         newDiv3.appendChild(newP);
 
-        mainDiv.appendChild(newDiv1); //Add new divs as children of <main>  
+        mainDiv.appendChild(newDiv1); //Add new elements as children of <main>  
     }
 }
 
