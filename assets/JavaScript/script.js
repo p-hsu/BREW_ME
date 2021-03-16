@@ -5,6 +5,9 @@ var brewInfo = document.querySelector("p")
 var brewHeader = document.querySelectorAll("h4")
 var headerArray = []
 
+var mainDiv = document.getElementById("main");
+
+
 // fetch brewery api
 function brewMe (e) {
 
@@ -24,6 +27,7 @@ function brewMe (e) {
 
     .then(function(data){
         console.log(data);
+        mainDiv.innerHTML = ""; //Clear previously search results
         renderBreweryResults(data);
     })
 }
@@ -55,8 +59,7 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
         newDiv3.appendChild(newH4);
         newDiv3.appendChild(newP);
 
-        document.body.appendChild(newDiv1); //Add to body of the page
-       
+        mainDiv.appendChild(newDiv1); //Add new divs as children of <main>  
     }
 }
 
