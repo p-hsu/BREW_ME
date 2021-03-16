@@ -1,15 +1,22 @@
 // declare global variables
 var subBtn = document.querySelector("button")
-var userInput = document.querySelector("input")
-var userLoc = userInput.value()
+// var userInput = document.getElementById("input").value
+// console.log(userInput);
+// var userLoc = userInput.value
+// console.log(userLoc);
+
 
 // fetch brewery api
 function brewMe (e) {
     e.preventDefault();
-    var brewApi = "https://api.openbrewerydb.org/breweries?by_city=" + userLoc;
+    var userInput = document.getElementById("input").value
+    console.log(userInput);
+
+    var brewApi = "https://api.openbrewerydb.org/breweries?by_city=" + userInput;
 
     fetch(brewApi)
     .then(function(response){
+        console.log(response);
         return response.json()
     })
     .then(function(data){
