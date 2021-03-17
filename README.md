@@ -59,14 +59,9 @@ Designated tasts and project member initials: see **Members** section for refere
 * [x] `project-proposal.md`: BM/FW/PH
 * [ ] `index.html`: BM/FW
 * [ ] `style.css`: FW
+* [ ] `script.js`: FW/PH
 * [ ] `README.md`: PH
-* [ ] API research: BM
-
-#### Client-side
-* [ ] pending
-
-#### Server-side
-* [ ] pending
+* [ ] API research: BM/FW/PH
 
 ### Wireframe
 
