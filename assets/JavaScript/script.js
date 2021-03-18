@@ -82,11 +82,15 @@ function initMap() {
     // new code 3/18/21
 
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom:10,
+        zoom:9,
         center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
     })
 
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = coords.map((x)=> {
+        return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+    })
 
     const markers = locations.map((location, i) => {
         return new google.maps.Marker({
@@ -100,28 +104,3 @@ function initMap() {
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
-
-var locations = coords.map((x)=> {
-            return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude)}
-        })
-
-//-----------------------------------------------------------------
-//    PREVIOUS CODE
-//-----------------------------------------------------------------
-//     // The location of Urban Chestnut
-//     var markers = coords.map((x)=> {
-//         return {lat:parseFloat(x.latitude), lng: parseFloat(x.longitude)}
-//     })
-//     console.log()
-//     var urbanC = { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)};
-//     // The map, centered at Uluru
-//     map = new google.maps.Map(document.getElementById("map"), {
-//       zoom: 15,
-//       center: urbanC,
-//     });
-//     // The marker, positioned at Uluru
-//     var marker = new google.maps.Marker({
-//       position: urbanC,
-//       map: map,
-//     });
-//   }
