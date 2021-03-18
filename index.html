@@ -20,7 +20,8 @@
       <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
       
       <!-- Local stylesheet -->
-      <link rel="stylesheet" href="./style.css">
+      <!-- <link rel="stylesheet" href="./style.css"> -->
+      <link rel="stylesheet" href="./map.css">
 
   </head>
 
@@ -47,6 +48,10 @@
 
       </header>
 
+      <!-- empty div for map to render -->
+      <div id="map"></div>
+
+
       <main id="main">
 
       <!-- Elements to be created in the JavaScript code -->
@@ -63,6 +68,11 @@
       <!-- <div id="map"></div> -->
       
       </main>
+    <script src = "./assets/JavaScript/map.js"></script>
+    <!-- script for google maps API -->
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEY6OFXhgYNZRC43wWwqb6OvRi39YaMK8" 
+    type="text/javascript"></script>
 
     <script src = "./assets/JavaScript/script.js"></script>
   </body>

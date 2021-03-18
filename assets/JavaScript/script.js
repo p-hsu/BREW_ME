@@ -7,6 +7,8 @@ var headerArray = []
 
 var mainDiv = document.getElementById("main"); //Will contain search results
 
+var coords = [];
+var map;
 
 // fetch brewery api
 function brewMe (e) {
@@ -29,6 +31,8 @@ function brewMe (e) {
         console.log(data);
         mainDiv.innerHTML = ""; //Clear previous search results
         renderBreweryResults(data);
+        coords = data;
+        initMap();
     })
 }
 
@@ -63,12 +67,29 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
     }
 }
 
+
 // event listn for search btn
 subBtn.addEventListener("click", brewMe);
 
 // event listn for populated divs
 var results = document.querySelector("h4");
 
-results.addEventListener("click", (function(){
-    window.location.assign("./map.html");
-}))
+function initMap() {
+
+    // The location of Urban Chestnut
+    var markers = coords.map((x)=> {
+        return {lat:parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+    })
+    console.log()
+    var urbanC = { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)};
+    // The map, centered at Uluru
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: urbanC,
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: urbanC,
+      map: map,
+    });
+  }
