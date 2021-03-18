@@ -79,20 +79,49 @@ var results = document.querySelector("h4");
 
 function initMap() {
 
-    // The location of Urban Chestnut
-    var markers = coords.map((x)=> {
-        return {lat:parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+    // new code 3/18/21
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom:10,
+        center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
     })
-    console.log()
-    var urbanC = { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)};
-    // The map, centered at Uluru
-    map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: urbanC,
+
+    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    const markers = locations.map((location, i) => {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length],
+        });
     });
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({
-      position: urbanC,
-      map: map,
+
+    new MarkerClusterer(map, markers, {
+        imagePath:
+            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
-  }
+}
+
+var locations = coords.map((x)=> {
+            return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+        })
+
+//-----------------------------------------------------------------
+//    PREVIOUS CODE
+//-----------------------------------------------------------------
+//     // The location of Urban Chestnut
+//     var markers = coords.map((x)=> {
+//         return {lat:parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+//     })
+//     console.log()
+//     var urbanC = { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)};
+//     // The map, centered at Uluru
+//     map = new google.maps.Map(document.getElementById("map"), {
+//       zoom: 15,
+//       center: urbanC,
+//     });
+//     // The marker, positioned at Uluru
+//     var marker = new google.maps.Marker({
+//       position: urbanC,
+//       map: map,
+//     });
+//   }
