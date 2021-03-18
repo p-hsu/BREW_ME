@@ -28,10 +28,13 @@ function brewMe (e) {
     })
 
     .then(function(data){
-        console.log(data);
+        var filteredData = data.filter((d)=> {
+            return !!d.latitude
+        })
+        console.log(filteredData);
         mainDiv.innerHTML = ""; //Clear previous search results
-        renderBreweryResults(data);
-        coords = data;
+        renderBreweryResults(filteredData);
+        coords = filteredData;
         initMap();
     })
 }
