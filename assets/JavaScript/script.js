@@ -60,7 +60,7 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
 
         //Insert data from the API call into the new elements
         newH4.innerHTML = data[i].name;
-        newP.innerHTML = data[i].street + "<br/>" + data[i].city + ", " + data[i].state + "<br/>" + data[i].postal_code + "<br/><br/> Phone: " + data[i].phone;
+        newP.innerHTML = data[i].street + "<br/>" + data[i].city + ", " + data[i].state + "<br/>" + data[i].postal_code + "<br/><br/>"  + "<a href='" + data[i].website_url + "'>" + data[i].website_url + "</a>";
     
         newDiv3.appendChild(newH4);
         newDiv3.appendChild(newP);
