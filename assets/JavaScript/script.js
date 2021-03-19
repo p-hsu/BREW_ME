@@ -79,10 +79,8 @@ var results = document.querySelector("h4");
 
 function initMap() {
 
-    // new code 3/18/21
-
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom:9,
+        zoom:9.5,
         center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
     })
 
