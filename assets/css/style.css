@@ -1,0 +1,35 @@
+#header{
+    background-color: #012201;
+    text-align: center;
+}
+
+#header h1 {
+    color:goldenrod;
+    font-family: 'Allan', cursive;
+    font-size: 4rem;
+}
+
+.subtitle {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+#header p {
+    color:goldenrod;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero-body {
+    padding: 0rem 1.5rem;
+}
+
+.card {
+    width:60%;
+    margin: auto;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
