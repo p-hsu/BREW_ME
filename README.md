@@ -4,7 +4,7 @@
 
 ## Project overview
 
-This application allows users to locate any breweries within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for project-build aspects, functionality, and more.
+This application allows users to locate any breweries within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for all project details.
 
 [Project Proposal](./project-proposal.md)
 
@@ -33,8 +33,7 @@ The following components are used to build the code for this project:
     * Fontawesome
     * custom
 3. **JavaScript**:
-    * JQuery is used for DOM manipulation in `script.js`
-    * 
+    * Vanilla JavaScript
 4. **API**:
     * https://developers.google.com/maps/
     * https://www.openbrewerydb.org/
@@ -57,11 +56,25 @@ The following lists all functions within this project:
 Designated tasts and project member initials: see **Members** section for reference
 * [x] wireframe: FW/BM/PH
 * [x] `project-proposal.md`: BM/FW/PH
-* [ ] `index.html`: BM/FW
-* [ ] `style.css`: FW
-* [ ] `script.js`: FW/PH
-* [ ] `README.md`: PH
+* [ ] `index.html`: BM/FW > in progress
+* [ ] `style.css`: FW > in progress
+* [ ] `script.js`: FW/PH > in progress
+* [ ] `README.md`: PH > in progress
 * [ ] API research: BM/FW/PH
+
+## Installation
+
+1. Clone this repository onto local workspace
+2. Open Terminal (MacOS) or Git Bash (Windows) and change location to where you want the cloned directory
+3. Type `git clone` and paste copied respository
+4. Directory should include the following:
+    * assets folder
+        * images folder *for `README.md` only*
+        * javascript folder: `script.js`
+        * css folder: `style.css`
+    * `index.html`
+    * `README.md`
+    * `.gitignore` file
 
 ### Wireframe
 
