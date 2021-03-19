@@ -85,15 +85,16 @@ function initMap() {
     })
 
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+    console.log(coords);
     var locations = coords.map((x)=> {
-        return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude)}
+        return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude), name: x.name}
     })
-
+    console.log(locations);
     const markers = locations.map((location, i) => {
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
+            title: locations[i].name
         });
     });
 
