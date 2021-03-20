@@ -7,11 +7,8 @@ var headerArray = []
 
 var mainDiv = document.getElementById("main"); //Will contain search results
 
-<<<<<<< HEAD
-=======
 var coords = [];
 var map;
->>>>>>> main
 
 // fetch brewery api
 function brewMe (e) {
@@ -31,42 +28,6 @@ function brewMe (e) {
     })
 
     .then(function(data){
-<<<<<<< HEAD
-        console.log(data);
-        mainDiv.innerHTML = ""; //Clear previous search results
-        renderBreweryResults(data);
-    })
-}
-
-
-function renderBreweryResults (data) { //For loop creates new divs to contain brewery information
-
-    for(i=0; i<data.length-1; i++) {
-
-        //Create new elements
-        var newDiv1 = document.createElement("div");
-        var newDiv2 = document.createElement("div");
-        var newDiv3 = document.createElement("div");
-        var newH4 = document.createElement("h4");
-        var newP = document.createElement("p");
-
-        //Add classes for styling
-        newDiv1.classList.add("card");
-        newDiv2.classList.add("card-content"); 
-        newDiv3.classList.add("content"); 
-    
-        newDiv1.appendChild(newDiv2);
-        newDiv2.appendChild(newDiv3);
-
-        //Insert data from the API call into the new elements
-        newH4.innerHTML = data[i].name;
-        newP.innerHTML = data[i].street + "<br/>" + data[i].city + ", " + data[i].state + "<br/>" + data[i].postal_code + "<br/><br/> Phone: " + data[i].phone;
-    
-        newDiv3.appendChild(newH4);
-        newDiv3.appendChild(newP);
-
-        mainDiv.appendChild(newDiv1); //Add new elements as children of <main>  
-=======
         var filteredData = data.filter((d)=> {
             return !!d.latitude
         })
@@ -106,7 +67,6 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
 
         mainDiv.appendChild(newDiv1); //Add new elements as children of <main>
 
->>>>>>> main
     }
 }
 
