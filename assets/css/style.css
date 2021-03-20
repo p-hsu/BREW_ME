@@ -1,20 +1,29 @@
 #header{
-    background-color: #012201;
+    background-image: url(../../assets/images/brewery.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    height: 320px;
 }
 
 #header h1 {
-    color:goldenrod;
+    color:white;
     font-family: 'Allan', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .subtitle {
-    margin-bottom: 8px;
-    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
 }
+
+form {
+    margin-top: 0;
+}
+
 #header p {
-    color:goldenrod;
+    color:white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -23,12 +32,20 @@
 }
 
 .card {
-    width:60%;
+    background-color: rgb(241, 232, 232);
+    width:40%;
     margin: auto;
+    text-align: center;
+}
+
+.map-container {
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 #map {
-    height: 400px;
+    height: 300px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
