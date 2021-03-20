@@ -44,7 +44,7 @@ function brewMe (e) {
 
 function renderBreweryResults (data) { //For loop creates new divs to contain brewery information
 
-    for(i=0; i<data.length-1; i++) {
+    for(i=0; i<data.length; i++) {
 
         //Create new elements
         var newDiv1 = document.createElement("div");
