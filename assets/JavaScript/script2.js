@@ -133,15 +133,11 @@ function initMap() {
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 
-        // EVENT LISTENER FOR MARKERS
-
-
-
-
-    
+    // EVENT LISTENER FOR MARKERS
     markers.forEach(function(marker){
-        marker.addListener("mouseover", function(){
+        marker.addListener("click", function(){
             console.log("what");
+            infoWindow.open(map, marker);
         })
     })
 }
