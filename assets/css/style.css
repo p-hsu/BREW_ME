@@ -52,9 +52,3 @@ form {
     /* The width is the width of the web page */
   }
 
-@media screen and (max-width: 505px) {
-
-    #header {
-        height: 225px;
-    }
-}
