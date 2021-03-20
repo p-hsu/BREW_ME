@@ -3,7 +3,8 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 200px;
+    height: fit-content;
+    padding: 2rem;
 }
 
 #header h1 {
