@@ -10,6 +10,8 @@ var mainDiv = document.getElementById("main"); //Will contain search results
 var coords = [];
 var map;
 
+var searchItemNum;
+
 // fetch brewery api
 function brewMe (e) {
 
@@ -33,6 +35,7 @@ function brewMe (e) {
         })
         console.log(filteredData);
         mainDiv.innerHTML = ""; //Clear previous search results
+        searchItemNum = 1; //Numbers start at 1 for each search
         renderBreweryResults(filteredData);
         coords = filteredData;
         initMap();
@@ -59,7 +62,7 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
         newDiv2.appendChild(newDiv3);
 
         //Insert data from the API call into the new elements
-        newH4.innerHTML = data[i].name;
+        newH4.innerHTML = searchItemNum + ". " + data[i].name;
         newP.innerHTML = data[i].street + "<br/>" + data[i].city + ", " + data[i].state + "<br/>" + data[i].postal_code + "<br/><br/>"  + "<a href='" + data[i].website_url + "'>" + data[i].website_url + "</a>";
     
         newDiv3.appendChild(newH4);
@@ -67,6 +70,7 @@ function renderBreweryResults (data) { //For loop creates new divs to contain br
 
         mainDiv.appendChild(newDiv1); //Add new elements as children of <main>
 
+        searchItemNum ++;
     }
 }
 
@@ -80,11 +84,11 @@ var results = document.querySelector("h4");
 function initMap() {
 
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom:9.5,
+        zoom:15,
         center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
     })
 
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const labels = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
     console.log(coords);
     var locations = coords.map((x)=> {
         return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude), name: x.name}
@@ -103,3 +107,7 @@ function initMap() {
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 }
+
+
+//changed header background and styling
+// made search results into an ordered list

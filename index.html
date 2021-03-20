@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@p-hsu 
+p-hsu
+/
+BREW_ME
+1
+10
+Code
+Issues
+Pull requests
+Actions
+Projects
+1
+Wiki
+Security
+Insights
+Settings
+BREW_ME/index.html
+@fdwootton
+fdwootton edited header styling
+Latest commit 88eada1 19 minutes ago
+ History
+ 3 contributors
+@fdwootton@brandon-maxwell@p-hsu
+82 lines (61 sloc)  2.57 KB
+  
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,10 +48,7 @@
 
       <!-- Bulma -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-      
-      <!-- Pure.css -->
-      <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
-      
+  
       <!-- Local stylesheet -->
       <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,15 +60,14 @@
   <body>
 
       <!-- Brew Me header -->
-      <header class="hero" id="header">
-          <div class="hero-body">
-            <h1 class="title">
+      <header id="header">
+            <h1>
               <i class="fas fa-glass-cheers"></i> Brew Me
             </h1>
-            <p class="subtitle">
-              Type your city below to find a brewery near you!
-            </p>
-          </div>
+
+          <p class="subtitle">
+            Type your city below to find a brewery near you!
+          </p>
 
           <!-- Search Bar -->
           <form class="pure-form search-bar">
@@ -50,9 +79,13 @@
 
       </header>
 
-      <!-- empty div for map to render -->
-      <div id="map"></div>
+      <div class="map-container">
 
+        <!-- empty div for map to render -->
+        <div id="map"></div>
+
+      </div>
+  
 
       <main id="main">
 
@@ -70,12 +103,25 @@
       <!-- <div id="map"></div> -->
       
       </main>
+    <script src = "./assets/JavaScript/map.js"></script>
     <!-- script for google maps API -->
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEY6OFXhgYNZRC43wWwqb6OvRi39YaMK8" 
     type="text/javascript"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script src = "./assets/JavaScript/script2.js"></script>
+    <script src = "./assets/JavaScript/script.js"></script>
   </body>
   
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
