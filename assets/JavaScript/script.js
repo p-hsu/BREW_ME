@@ -88,7 +88,7 @@ function initMap() {
         center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
     })
 
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const labels = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
     console.log(coords);
     var locations = coords.map((x)=> {
         return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude), name: x.name}
