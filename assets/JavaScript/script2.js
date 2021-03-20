@@ -134,11 +134,15 @@ function initMap() {
     });
 
         // EVENT LISTENER FOR MARKERS
-    google.maps.event.addListener(markers, "click", (function(windowText){
-        return function () {
-            infoWindow.setContent(windowText);
-            infoWindow.open(map, markers);
-        }
-    })(windowText));
+
+
+
+
+    
+    markers.forEach(function(marker){
+        marker.addListener("mouseover", function(){
+            console.log("what");
+        })
+    })
 }
  

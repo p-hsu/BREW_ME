@@ -57,11 +57,16 @@ The following lists all functions within this project:
 Designated tasts and project member initials: see **Members** section for reference
 * [x] wireframe: FW/BM/PH
 * [x] `project-proposal.md`: BM/FW/PH
-* [ ] `index.html`: BM/FW > in progress
-* [ ] `style.css`: FW > in progress
-* [ ] `script.js`: FW/PH > in progress
-* [ ] `README.md`: PH > in progress
-* [ ] API research: BM/FW/PH
+* [x] `index.html`: BM/FW
+* [x] `style.css`: BM/FW
+* [x] `script.js`: BM/FW/PH
+    * for loop to render HTML divs: FW
+    * details populated 
+    * call Google Maps JavaScript API to render embedded dynamic map: PH
+    * functions to render markers/marker clusters for populated data from brewery API: BM
+    * 
+* [x] `README.md`: PH > in progress
+* [x] API research: BM/FW/PH
 
 ## Installation
 
@@ -91,7 +96,7 @@ Designated tasts and project member initials: see **Members** section for refere
 
 Please use the following link to deploy a live URL of this project:
 
-[Brew Me!](https:/p-hsu.gitpub.io/Brew_Me)
+[Brew Me!](https://p-hsu.github.io/BREW_ME/)
 
 ## Credit
 
