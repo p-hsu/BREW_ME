@@ -16,7 +16,14 @@ This application allows users to locate any breweries within a given distance fr
 
 ### Project Status:
 
-Incomplete: please see **Process** section for reference.
+#### Issues to debug:
+* unable to searching on mobile when mobile is held in profile mode
+
+#### Improvements to consider:
+* rendering info windows for map markers
+* storing user data for other functions
+    * ...to save favorite breweries
+    * ...to pull into googleMap functions ie. directions 
 
 ****
 
@@ -29,7 +36,6 @@ The following components are used to build the code for this project:
 1. **HTML**
 2. **CSS**:
     * Bulma
-    * Pure
     * Fontawesome
     * custom
 3. **JavaScript**:
@@ -54,13 +60,18 @@ The following lists all functions within this project:
 #### Tasks
 
 Designated tasts and project member initials: see **Members** section for reference
-* [x] wireframe: FW/BM/PH
+* [x] wireframe: BM/FW/PH
 * [x] `project-proposal.md`: BM/FW/PH
-* [ ] `index.html`: BM/FW > in progress
-* [ ] `style.css`: FW > in progress
-* [ ] `script.js`: FW/PH > in progress
+* [x] `index.html`: BM/FW
+* [x] `style.css`: BM/FW
+* [x] `script.js`: BM/FW/PH
+    * for loop to render HTML divs: PH/FW
+    * details populated from brewery API: BM/FW
+    * call Google Maps JavaScript API to render embedded dynamic map: PH
+    * functions to render markers/marker clusters for populated data from brewery API: BM
+    * 
 * [ ] `README.md`: PH > in progress
-* [ ] API research: BM/FW/PH
+* [x] API research: BM/FW/PH
 
 ## Installation
 
@@ -90,7 +101,7 @@ Designated tasts and project member initials: see **Members** section for refere
 
 Please use the following link to deploy a live URL of this project:
 
-[Brew Me!](https:/p-hsu.gitpub.io/Brew_Me)
+[Brew Me!](https://p-hsu.github.io/BREW_ME/)
 
 ## Credit
 
