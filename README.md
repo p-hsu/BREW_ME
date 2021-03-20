@@ -15,6 +15,7 @@ This application allows users to locate any breweries within a given distance fr
 * Pamela Hsu: [p-hsu](https://github.com/p-hsu)
 
 ### Project Status:
+#### Improvements to consider:
 
 Incomplete: please see **Process** section for reference.
 
