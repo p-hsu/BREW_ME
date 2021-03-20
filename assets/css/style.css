@@ -3,7 +3,8 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 200px;
+    height: fit-content;
+    padding: 2rem;
 }
 
 #header h1 {
@@ -12,28 +13,14 @@
     font-size: 5rem;
 }
 
-.subtitle {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-}
-
-form {
-    margin-top: 0;
-}
-
 #header p {
     color:white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.hero-body {
-    padding: 0rem 1.5rem;
-}
-
 .card {
     background-color: rgb(241, 232, 232);
-    width:40%;
+    width:100%;
     margin: auto;
     text-align: center;
 }
@@ -50,3 +37,4 @@ form {
     width: 100%;
     /* The width is the width of the web page */
   }
+
