@@ -4,10 +4,9 @@
 
 ## Project overview
 
-This application allows users to locate any local breweries given a user input city name. **"Brew Me!"** should be simple and user friendly; please refer to the following for all project details.
+This application allows users to locate any local breweries given a user input city name. **Brew Me!** should be simple and user friendly; please refer to the following for all project details.
 
-[Project Proposal](./project-proposal.md)
-*Includes user story and acceptance criteria*
+[Project Proposal](./project-proposal.md) : *Includes user story and acceptance criteria*
 
 ### Project Members:
 
@@ -17,25 +16,10 @@ This application allows users to locate any local breweries given a user input c
 
 ### Project Status:
 
+This application is striclty a MVP with the limited function of searching local breweries by city. The list below mentions future development ideas that could impove upon the simplicity of function as well as UX/UI aspects of **BREW ME!** Please refer to the **"Beyond MVP"** section for details.
+
 #### Issues to debug:
-* rending unique info windows for each map markers *(see commented out javascript)*
-
-#### Beyond MVP:
-
-This application is striclty a MVP with the limited function of searching local breweries by city. The list below mentions future development ideas that could impove upon the simplicity of function as well as UX/UI aspects of **BREW ME!**
-
-* additional Google Map API functions
-    - geolocation
-    - distance from
-    - trip planning
-* storing user data for other functions
-    - ...to save favorite breweries
-    - ...to pull into googleMap functions ie. directions 
-* include social networking functions
-    - reviews and ratings
-    - sharing favorites
-* even MORE mobile friendly
-
+* rending unique info windows for each map markers *(see commented out code at end of `script.js`)*
 
 ****
 
@@ -85,6 +69,22 @@ Designated tasts and project member initials: see **Members** section for refere
 * [x] `README.md`: PH
 * [x] API research: BM/FW/PH
 
+### Beyond MVP:
+
+* additional Google Map API functions
+    - geolocation
+    - distance matrix
+* storing user data for other functions
+    - ...to save favorite breweries
+    - ...to pull into googleMap functions ie. directions 
+    - ...to plan a brewery crawl!
+* include social networking functions
+    - reviews and ratings
+    - sharing favorites
+* even MORE mobile friendly
+
+****
+
 ## Installation
 
 1. Clone this repository onto local workspace
@@ -115,9 +115,11 @@ Please use the following link to deploy a live URL of this project:
 
 [Brew Me!](https://p-hsu.github.io/BREW_ME/)
 
+****
+
 ## Credit
 
-* "**Brew Me!** original concept and code collaborators: Brandon Maxwell || Felicia Wootton || Pamela Hsu
+* **Brew Me!** original concept and code collaborators: Brandon Maxwell || Felicia Wootton || Pamela Hsu
 * Mim Armand and Kat Poulos provided assistance and mentorship as the program instructor and teaching assistant respectivley
 * Full-stack Bootcamp Program @ [Washington University, Saint Louis](https://bootcamp.tlcenter.wustl.edu/) through [© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand](https://www.trilogyed.com/)
 * [Google Maps API](https://developers.google.com/maps/)
