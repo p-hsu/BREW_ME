@@ -7,6 +7,7 @@
 This application allows users to locate any local breweries given a user input city name. **"Brew Me!"** should be simple and user friendly; please refer to the following for all project details.
 
 [Project Proposal](./project-proposal.md)
+*Includes user story and acceptance criteria*
 
 ### Project Members:
 
