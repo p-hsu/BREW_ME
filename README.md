@@ -16,7 +16,7 @@ This application allows users to locate any local breweries given a user input c
 
 ### Project Status:
 
-This application is striclty a MVP with the limited function of searching local breweries by city. The list below mentions future development ideas that could impove upon the simplicity of function as well as UX/UI aspects of **BREW ME!** Please refer to the **"Beyond MVP"** section for details.
+This application is striclty a MVP with the limited function of searching local breweries by city. The list below mentions future development ideas that could impove upon the simplicity of function as well as UX/UI aspects of **BREW ME!** Please refer to the [**Beyond MVP**](#beyond-mvp) section for details.
 
 #### Issues to debug:
 * rending unique info windows for each map markers *(see commented out code at end of `script.js`)*
@@ -56,7 +56,7 @@ The following lists all functions within this project:
 ### Process:
 #### Tasks
 
-Designated tasts and project member initials: see **Members** section for reference
+Designated tasts and project member initials: see [**Project Members**](#project-members) section for reference
 * [x] wireframe: BM/FW/PH
 * [x] `project-proposal.md`: BM/FW/PH
 * [x] `index.html`: BM/FW
