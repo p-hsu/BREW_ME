@@ -7,7 +7,8 @@ var headerArray = []
 
 var mainDiv = document.getElementById("main"); //Will contain search results
 
-var coords = [];
+// RENAMED "COORDS" FOR MORE INTUITIVE CODE
+var brewArray = [];
 var map;
 
 var searchItemNum;
@@ -18,14 +19,14 @@ function brewMe (e) {
     e.preventDefault();
 
     var userInput = document.getElementById("input").value
-    console.log(userInput);
+    // console.log(userInput);
 
     var brewApi = "https://api.openbrewerydb.org/breweries?by_city=" + userInput;
 
     fetch(brewApi)
 
     .then(function(response){
-        console.log(response);
+        // console.log(response);
         return response.json()
     })
 
@@ -33,11 +34,11 @@ function brewMe (e) {
         var filteredData = data.filter((d)=> {
             return !!d.latitude
         })
-        console.log(filteredData);
+        // console.log(filteredData);
         mainDiv.innerHTML = ""; //Clear previous search results
         searchItemNum = 1; //Numbers start at 1 for each search
         renderBreweryResults(filteredData);
-        coords = filteredData;
+        brewArray = filteredData;
         initMap();
     })
 }
@@ -84,16 +85,19 @@ var results = document.querySelector("h4");
 function initMap() {
 
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom:15,
-        center: { lat: parseFloat(coords[0].latitude), lng: parseFloat(coords[0].longitude)}
+        zoom:10,
+        center: { lat: parseFloat(brewArray[0].latitude), lng: parseFloat(brewArray[0].longitude)}
     })
+    // console.log(brewArray);
 
     const labels = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
-    console.log(coords);
-    var locations = coords.map((x)=> {
+
+    var locations = brewArray.map((x)=> {
         return {lat: parseFloat(x.latitude), lng: parseFloat(x.longitude), name: x.name}
     })
-    console.log(locations);
+    // console.log(locations);
+
+    // displaying markers using parsed lat/long values
     const markers = locations.map((location, i) => {
         return new google.maps.Marker({
             position: location,
@@ -106,6 +110,33 @@ function initMap() {
         imagePath:
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
+
+    // INFOWINDOW CODE TO DEBUG
+    // // VARIABLE BREWERYNAME FOR INFOWINDO
+    // var breweryName = brewArray.map((x)=> {
+    //     return {name: x.name}
+    // });
+
+    // //VARIABLE WINDOWTEXT FOR WHAT WILL SHOW IN INFOWINDOW
+    // var windowText
+    // var infoWindow
+    // for (var i = 0; i < breweryName.length; i++){
+    //     windowText = breweryName[i].name
+    //     console.log(windowText);
+
+    //     infoWindow = new google.maps.InfoWindow({
+    //         content: windowText
+    //     });
+
+    //     // EVENT LISTENER FOR MARKERS
+    //     markers.forEach(function(marker){
+    //         marker.addListener("click", function(){
+    //             console.log("what");
+    //             infoWindow.open(map, marker);
+    //         });
+    //     });
+    // };
+
 }
 
 

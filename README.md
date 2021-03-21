@@ -4,7 +4,7 @@
 
 ## Project overview
 
-This application allows users to locate any breweries within a given distance from a user-input address. **"Brew Me!"** should be simple and user friendly; please refer to the following for all project details.
+This application allows users to locate any local breweries given a user input city name. **"Brew Me!"** should be simple and user friendly; please refer to the following for all project details.
 
 [Project Proposal](./project-proposal.md)
 
@@ -15,16 +15,26 @@ This application allows users to locate any breweries within a given distance fr
 * Pamela Hsu: [p-hsu](https://github.com/p-hsu)
 
 ### Project Status:
-#### Improvements to consider:
 
 #### Issues to debug:
-* unable to searching on mobile when mobile is held in profile mode
+* rending unique info windows for each map markers *(see commented out javascript)*
 
-#### Improvements to consider:
-* rendering info windows for map markers
+#### Beyond MVP:
+
+This application is striclty a MVP with the limited function of searching local breweries by city. The list below mentions future development ideas that could impove upon the simplicity of function as well as UX/UI aspects of **BREW ME!**
+
+* additional Google Map API functions
+    - geolocation
+    - distance from
+    - trip planning
 * storing user data for other functions
-    * ...to save favorite breweries
-    * ...to pull into googleMap functions ie. directions 
+    - ...to save favorite breweries
+    - ...to pull into googleMap functions ie. directions 
+* include social networking functions
+    - reviews and ratings
+    - sharing favorites
+* even MORE mobile friendly
+
 
 ****
 
@@ -36,26 +46,27 @@ The following components are used to build the code for this project:
 
 1. **HTML**
 2. **CSS**:
-    * Bulma
-    * Fontawesome
-    * custom
+    - Bulma
+    - Fontawesome
+    - custom
 3. **JavaScript**:
-    * Vanilla JavaScript
+    - Vanilla JavaScript
 4. **API**:
-    * https://developers.google.com/maps/
-    * https://www.openbrewerydb.org/
+    - [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+    - [Open Brewery DB](https://www.openbrewerydb.org/)
 
 ### Functionality:
 
 The following lists all functions within this project:
 
-* area for user input to enter an address by city name
+* area for user input to enter and search via city name
+* embedded dynamic google maps displaying markers of listed data
+    - hovering over markers will show brewery name
 * area where results will populate and display the following:
     - brewery name
     - address
     - brewery website if available 
-    - distance from user input location
-    - 
+* mobile-friendly with media query technique
 
 ### Process:
 #### Tasks
@@ -66,12 +77,11 @@ Designated tasts and project member initials: see **Members** section for refere
 * [x] `index.html`: BM/FW
 * [x] `style.css`: BM/FW
 * [x] `script.js`: BM/FW/PH
-    * for loop to render HTML divs: PH/FW
-    * details populated from brewery API: BM/FW
-    * call Google Maps JavaScript API to render embedded dynamic map: PH
-    * functions to render markers/marker clusters for populated data from brewery API: BM
-    * 
-* [ ] `README.md`: PH > in progress
+    - for loop to render HTML divs: PH/FW
+    - details populated from brewery API: BM/FW
+    - call Google Maps JavaScript API to render embedded dynamic map: PH
+    - functions to render markers/marker clusters for populated data from brewery API: BM
+* [x] `README.md`: PH
 * [x] API research: BM/FW/PH
 
 ## Installation
@@ -81,9 +91,9 @@ Designated tasts and project member initials: see **Members** section for refere
 3. Type `git clone` and paste copied respository
 4. Directory should include the following:
     * assets folder
-        * images folder *for `README.md` only*
-        * javascript folder: `script.js`
-        * css folder: `style.css`
+        - images folder *for `README.md` only*
+        - javascript folder: `script.js`
+        - css folder: `style.css`
     * `index.html`
     * `README.md`
     * `.gitignore` file
@@ -94,7 +104,7 @@ Designated tasts and project member initials: see **Members** section for refere
 
 ### MVP screenshot
 
-![Animated GIF of project:](./assets/images/brew-me-gif.png)
+![Animated GIF of project:](./assets/images/brew-me.gif)
 
 ****
 
@@ -109,6 +119,8 @@ Please use the following link to deploy a live URL of this project:
 * "**Brew Me!** original concept and code collaborators: Brandon Maxwell || Felicia Wootton || Pamela Hsu
 * Mim Armand and Kat Poulos provided assistance and mentorship as the program instructor and teaching assistant respectivley
 * Full-stack Bootcamp Program @ [Washington University, Saint Louis](https://bootcamp.tlcenter.wustl.edu/) through [© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand](https://www.trilogyed.com/)
+* [Google Maps API](https://developers.google.com/maps/)
+* [Open Brewery DB](https://www.openbrewerydb.org/)
 * Animated GIF created using [© Screencastify,LLC 2020](https://www.screencastify.com/)
 
 
