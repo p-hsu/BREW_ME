@@ -92,7 +92,7 @@ Designated tasts and project member initials: see [**Project Members**](#project
 3. Type `git clone` and paste copied respository
 4. Directory should include the following:
     * assets folder
-        - images folder *for `README.md` only*
+        - images folder
         - javascript folder: `script.js`
         - css folder: `style.css`
     * `index.html`
