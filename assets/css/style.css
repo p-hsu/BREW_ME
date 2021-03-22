@@ -1,5 +1,9 @@
 #header{
+<<<<<<< HEAD
     background-image: url(../../../beer-dark-background.jpg);
+=======
+    background-image: url(../../assets/images/beer-dark-background.jpg);
+>>>>>>> main
     background-size: cover;
     background-position: center;
     text-align: center;
